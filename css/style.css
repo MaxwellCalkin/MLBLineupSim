@@ -1,0 +1,82 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-image: url('../images/baseball.jpg');
+     background-size: cover;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+.topContainer{
+     display: flex;
+     justify-content: space-around;
+}
+.topContainer input, .topContainer button{
+     height: 50px;
+     border: 2px solid dotted black;
+}
+.columnsContainer{
+     border: solid black 2px;
+     display: flex;
+}
+
+.columnsContainer > section{
+     display: flex;
+     flex-basis: 50%;
+     border: solid white 2px;
+}
+.logo{
+     text-align: center;
+     margin: auto;
+     display: flex;
+     justify-content: space-around;
+     border: 2px solid black;
+     border-top: 0 solid black;
+     
+}
+
+.leftColumn *, .rightColumn *{
+     width: 100%;
+}
+
+.playerOne, .playerTwo{
+     color: white;
+     text-shadow: 2px 2px black;
+}
+
+.hide{
+     display: none;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
