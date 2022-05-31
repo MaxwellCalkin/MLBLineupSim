@@ -55,6 +55,9 @@ footer {
      flex-basis: 50%;
      border: solid white 2px;
 }
+.teamOneScore, .teamTwoScore{
+     width: 30%;
+}
 .logo{
      text-align: center;
      margin: auto;
@@ -67,6 +70,8 @@ footer {
 
 .leftColumn *, .rightColumn *{
      width: 100%;
+     text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;
+     
 }
 
 .playerOne, .playerTwo{
@@ -76,6 +81,17 @@ footer {
 
 .hide{
      display: none;
+}
+
+.error{
+     color: white;
+     text-shadow: 1px 1px black;
+}
+.leftColumn *{
+     -webkit-text-fill-color: blue;
+}
+.rightColumn *{
+     color: red;
 }
 /******************************************
 /* ADDITIONAL STYLES
