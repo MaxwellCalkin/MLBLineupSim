@@ -20,78 +20,248 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+:root {
+     --amaranth: #ee215c;
+     --bahama-blue: #005693;
+     --sushi: #72B243;
+     --black: rgba(34, 34, 34, 0.829);
+     --white: #fff;
+     --light-black: rgb(65, 65, 65);
+     --light-white: #ccc;
+     --light-bg: #f5f5f5;
+     --dark-bg: rgba(0, 0, 0, .7);
+     --border: .1rem solid #aaa;
+     --box-shadow: 0.7rem 0.7rem rgba(0, 0, 0, 0.767);
+     --text-shadow: 1px 1px var(--white);
+     --background: var(--white);
+     --visibility: hidden;
+     --paragraph: var(--black);
+}
+
+html{
+     margin: 5rem;
+     font-family: 'Manrope', 'sans-serif';
+     font-size: 62.5%;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+     scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+html::-webkit-scrollbar-track {
+background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+background: var(--light-black);
+}
 
 body {
-     background-image: url('../images/baseball.jpg');
+     background: url('baseball.jpg');
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
      background-size: cover;
+     overflow-x: hidden;
+     overflow-y: hidden;
+     height: 100%;
+     width: 100%;
+     font-size: 2rem;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+.wrapper{
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     /* justify-content: center; */
+     align-items: center;
 }
 
-footer {
+header {
+     display: flex;
+     justify-content: space-between;
+}
 
+.logo{
+     border-radius: 5px;
+     height: 10%;
+     width: 10%;
+     
+}
+
+
+h1{
+     text-shadow: 2px 2px black;
+     font-size: 3rem;
+}
+
+.choose{
+     color: white;
+}
+
+.play-container{
+     background: var(--black);
+     padding: 5rem;
+     margin: 2rem 0;
+     border: none;
+     border-radius: 3rem;
+     width: 100%;
+     
 }
 .topContainer{
      display: flex;
-     justify-content: space-around;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
 }
+
 .topContainer input, .topContainer button{
      height: 50px;
      border: 2px solid dotted black;
 }
-.columnsContainer{
-     border: solid black 2px;
+
+.enter-player{
+     margin: auto;
      display: flex;
+}
+
+.enter-player > *{
+     margin: 0.2rem;
+}
+
+input, .addPlayerButt{
+     border: none;
+     border-radius: 5px;
+     padding: 0 2rem;
+}
+
+button {
+     background: rgba(0, 0, 0, 0.767);
+     padding: 2rem;
+     margin: auto;
+}
+
+button span {
+     display: block;
+     /* padding: 0 2rem; */
+     /* transform: translate3d(0, 0, 0); */
+     transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+     color: var(--white);
+}
+
+button:hover span {
+     transform: translate3d(4px, 4px, 0);
+}
+
+button{
+     background: var(--sushi);
+}
+
+button:hover{
+     box-shadow: var(--box-shadow);
+}
+
+.columnsContainer{
+     display: flex;
+     text-align: center;
 }
 
 .columnsContainer > section{
      display: flex;
-     flex-basis: 50%;
+     width: 100%;
      border: solid white 2px;
+     border-radius: 1rem;
+     box-shadow: var(--box-shadow);
+     margin: 0.5rem;
 }
-.teamOneScore, .teamTwoScore{
-     width: 30%;
-}
-.logo{
-     text-align: center;
-     margin: auto;
-     display: flex;
-     justify-content: space-around;
-     border: 2px solid black;
-     border-top: 0 solid black;
-     
+
+.leftColumn, .rightColumn{
+     padding: 1rem;
 }
 
 .leftColumn *, .rightColumn *{
      width: 100%;
-     text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;
-     
 }
 
-.playerOne, .playerTwo{
+
+/* .playerOne, .playerTwo{
      color: white;
      text-shadow: 2px 2px black;
+} */
+
+.playerOne{
+     color: var(--bahama-blue);
+}
+
+.playerTwo{
+     color: var(--amaranth);
 }
 
 .hide{
      display: none;
 }
 
-.error{
-     color: white;
-     text-shadow: 1px 1px black;
+
+@media screen and (max-width: 1000px) {
+     html{
+          /* margin: 2.5rem; */
+     }
+
+     .logo{
+          height: 20%;
+          width: 20%;
+     }
+
+     .columnsContainer>section {
+          flex-direction: column;
+     }
 }
-.leftColumn *{
-     -webkit-text-fill-color: blue;
+
+@media screen and (max-width: 870px){
+     .wrapper{
+          justify-content: center;
+     }
 }
-.rightColumn *{
-     color: red;
+
+@media screen and (max-width:570px){
+     html{
+          margin: 1.5rem;
+     }
+
+     .wrapper{
+          flex:1;
+     }
+
+     .logo{
+          height: 40%;
+          width: 40%;
+     }
+
+     .play-container{
+          padding: 2rem;
+          flex:1;
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+
+     }
+
+     .enter-player{
+          flex-direction: column;
+     }
+}
+
+@media screen and (max-width: 350px){
+     html{
+          font-size: 50%;
+     }
 }
 /******************************************
 /* ADDITIONAL STYLES

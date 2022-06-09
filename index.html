@@ -4,37 +4,65 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>MLB Lineup Sim</title>
-		<link rel="icon" type="image/x-icon" href="/images/mlbLogo.ico">
+		<title>Bar's Tool MLB Simulation</title>
+
+		<!-- font awesome and google font link -->
+		<script src="https://kit.fontawesome.com/94767ac4fe.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Manrope&family=Sora:wght@300&display=swap" rel="stylesheet">
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<section class='topContainer'>
-			<section class='buttonContainer'>
-				<input type="text" placeholder="Enter Player Name Here">
-				<button class='addPlayerButt'>Add Player</button>
-			</section>
-			<h1 class='playerOne toggle'>Player 1, Choose A Player</h1>
-			<h1	class='playerTwo toggle hide'>Player 2, Choose A Player</h1>
-		</section>
+		<header>
+			<img class='logo' src="img/mlbLogo.jpg" alt="mlb logo">
+			<p>Date/Time</p>
+		</header>
+		<section class="wrapper">
+			<section class="play-container">
+				<section class='topContainer'>
+					<section class="players">
+						<section class='playerOne toggle'>
+							<h1>Player 1</h1>					
+						</section>
+						<section class="playerTwo toggle hide">
+							<h1>Player 2</h1>
+						</section>
+					</section>
+					<section class="input-players">
+						<section class='buttonContainer' id="newForm">
+							<h1 class="choose">Choose a Player </h1>
+							<h4 class="error">Please Spell Better</h4>
+							<div class="enter-player">
+								<input type="text" placeholder="Enter Player Name Here">
+								<button class='addPlayerButt'>
+									<span>Add Player</span></span>
+								</button>
+							</div>
+						</section>
+					</section>
+				</section>
 
-		<section class='columnsContainer'>
-			<section class='leftColumn'>
-				<h2>Score: <b class=teamOneScore>0</b></h2>
-				<h3 class='teamOne'>Player 1:</h3>
-			</section>
-			<section class='rightColumn'>
-				<h2>Score: <b class=teamTwoScore>0</b></h2>
-				<h3 class='teamTwo'>Player 2:</h3>
+				<section class='columnsContainer'>
+					<section class='leftColumn'>
+						<h2 class="score">Score: <b class=teamOneScore>0</b></h2>
+						<h3 class='teamOne playerOne'>Player 1:</h3>
+					</section>
+					<section class='rightColumn'>
+						<h2 class="score">Score: <b class=teamTwoScore>0</b></h2>
+						<h3 class='teamTwo playerTwo'>Player 2:</h3>
+					</section>
+				</section>
 			</section>
 		</section>
+		
+	
 
-		<img class='logo' src="images/mlbLogo.jpg" alt="mlb logo">
-		<h2 class="error hide">ERROR: Please Spell Better</h2>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
