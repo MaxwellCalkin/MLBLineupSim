@@ -17,7 +17,7 @@ When I improve this project, I'll start by bringing object oriented principles i
 
 ## Lessons Learned:
 
-I got a lot of good, fun practice working with the MLB stats API, and I got to use my brother as a QA guide, using his feedback to vastly improve the game.
+I had fun collaborating with Nirel Chua (https://twitter.com/naniitsnina_)! I got a lot of good, fun practice working with the MLB stats API, and I got to use my brother as a QA guide, using his feedback to vastly improve the game.
 
 
 
