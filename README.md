@@ -44,8 +44,8 @@ I had fun collaborating with Nirel Chua (https://twitter.com/naniitsnina_)! I go
     <td width="33.3%" valign="top">
 <a target="_blank" href="#">To The Beat</a>
         <br />
-        <a target="_blank" href="#">
-          <img src="https://github.com/MaxwellCalkin/MaxwellCalkin/blob/main/images/biker.gif" width="100%" alt="To The Beat"/>
+        <a target="_blank" href="https://github.com/MaxwellCalkin/star-trek-full-stack">
+          <img src="https://thumbs.gfycat.com/EachPositiveAmericancurl-size_restricted.gif" width="100%" alt="Star Trek App"/>
         </a>
     </td>
   </tr>
