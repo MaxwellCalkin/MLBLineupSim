@@ -1,6 +1,6 @@
 # MLB Lineup Simulator : <a target="_blank" href="https://mlblineupsimulator.netlify.app/">Visit Here</a>
 
-<a target="_blank" href="https://www.maxwellcalkin.com">
+<a target="_blank" href="https://mlblineupsimulator.netlify.app/">
 <img src="https://github.com/MaxwellCalkin/MaxwellCalkin/blob/main/images/sox.gif" width="100%" alt="Portfolio"/>
 </a>
 
