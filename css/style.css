@@ -86,7 +86,7 @@ body {
 
 header {
      display: flex;
-     justify-content: space-between;
+     justify-content: space-evenly;
 }
 
 .logo{
@@ -107,6 +107,7 @@ h1{
 }
 
 .desc{
+     flex-basis: 80;
      text-shadow: 1px 1px black;
      color: var(--bahama-blue);
 }
