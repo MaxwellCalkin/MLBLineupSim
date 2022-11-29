@@ -107,6 +107,7 @@ h1{
 }
 
 .desc{
+     text-shadow: 1px 1px black;
      color: var(--bahama-blue);
 }
 
